@@ -1,0 +1,39 @@
+body {
+    font-family: "Audiowide", Vina Sans;
+    background-color: #871649;
+    text-align: center;
+    color: white;
+}
+
+img {
+    width: 300px;
+    justify-content: center;
+
+
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.Tuk {
+    display: none;
+
+}
+
+.Mushu {
+    display: none;
+
+}
+
+.Pascal {
+    display: none;
+
+}
+
+.Sebastian {
+    display: none;
+ 
+
+}
