@@ -1,0 +1,134 @@
+<!DOCTYPE html> <html><head>
+        <title> Which Disney Sidekick are you? </title>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&amp;display=swap" rel="stylesheet">
+    <style>body {
+    font-family: "Audiowide", Vina Sans;
+    background-color: #871649;
+    text-align: center;
+    color: white;
+}
+
+img {
+    width: 300px;
+    justify-content: center;
+
+
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.Tuk {
+    display: none;
+
+}
+
+.Mushu {
+    display: none;
+
+}
+
+.Pascal {
+    display: none;
+
+}
+
+.Sebastian {
+    display: none;
+ 
+
+}</style></head>
+    <body>
+        
+        <div class="title">
+            <h1>Which Disney Sidekick are you? </h1>
+        </div>
+        <div class="questions">
+            <h4>Would you rather have many not so close friends or a few close friends? </h4>
+
+            <img src="https://d.newsweek.com/en/full/2130145/friendship-illustration.jpg?w=1600&amp;h=1200&amp;q=88&amp;f=f0e49d641f46ef4a23e9226a836cb5c9" alt="Many Friends">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTnyl5ixhCumCac8wwIFDwsQZVc4vUxhMIlw&amp;usqp=CAU" alt="Not Many Friends">
+            <div class="buttons">
+                <input placeholder="Many Friends or Few Close Friends" class="question1">
+
+            </div>
+            <h4>Captain America or Iron Man </h4>
+            <img src="https://api.time.com/wp-content/uploads/2015/04/avengers-poster-06.jpg?quality=85&amp;w=1014" alt="Captain America">
+            <img src="https://upload.wikimedia.org/wikipedia/en/4/47/Iron_Man_%28circa_2018%29.png" alt="Iron Man">
+            <div class="buttons">
+                <input placeholder="Captain America or Iron Man" class="question2">
+
+                <button class="button2">Submit </button>
+
+            </div>
+        </div>
+        <div class="result">
+        </div>
+
+            <div class="Tuk">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUYZsbfLk3TgB1dQSi8_7qq9q7LcCq0PKkqA&amp;usqp=CAU1" alt="Tuk">
+            </div>
+            <div class="Mushu">
+                <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2022/06/Mushu-in-Mulan.jpg" alt="Mushu">
+            </div>
+            <div class="Pascal">
+                <img src="https://i.pinimg.com/236x/18/15/8e/18158eeb22b2235b7c04758f8ca5d1ad--pascal-tangled-tangled-rapunzel.jpg" alt="Pascal">
+            </div>
+            <div class="Sebastian">
+                <img src="https://heroichollywood.com/wp-content/uploads/2021/01/The-Little-Mermaid-Sebastian-The-Crab-Disney.jpg" alt="Sebastain">
+            </div>
+        
+
+
+
+
+
+
+
+
+
+
+    
+<script>
+/*__POPCODESTART__*/
+//let button1= document.querySelector(".button1");
+var button2 = document.querySelector(".button2");
+var Tuk = document.querySelector(".Tuk");
+var Mushu = document.querySelector(".Mushu");
+var Pascal = document.querySelector(".Pascal");
+var Sebastian = document.querySelector(".Sebastian");
+var results = document.querySelector(".result"); // button1.onclick = function() {
+// 
+// console.log(question1);
+// question1.innerHTML = (button1); };
+
+button2.onclick = function () {
+  var question1 = document.querySelector(".question1").value;
+  var question2 = document.querySelector(".question2").value;
+  console.log(question2); // question2.innerHTML = (button2); 
+
+  if (question1 === "Many Friends" && question2 === "Captain America") {
+    results.style.display = "block";
+    Tuk.style.display = "block";
+    results.innerHTML = "Tuk";
+    results.innerHTML = "Your Disney Sidekick is" + " " + "Tuk Tuk";
+  } else if (question1 === "Many Friends" && question2 === "Iron Man") {
+    results.style.display = "block";
+    Sebastian.style.display = "block";
+    results.innerHTML = "Sebastian";
+    results.innerHTML = "Your Disney Sidekick is" + " " + "Sebastian";
+  } else if (question1 === "Few Close Friends" && question2 === "Captain America") {
+    results.style.display = "block";
+    Mushu.style.display = "block";
+    results.innerHTML = "Mushu";
+    results.innerHTML = "Your Disney Sidekick is" + " " + "Mushu";
+  } else if (question1 === "Few Close Friends" && question2 === "Iron Man") {
+    results.style.display = "block";
+    Pascal.style.display = "block";
+    results.innerHTML = "Pascal";
+    results.innerHTML = "Your Disney Sidekick is" + " " + "Pascal";
+  }
+};
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBvcGNvZGVQcmV2aWV3LmpzIl0sIm5hbWVzIjpbImJ1dHRvbjIiLCJkb2N1bWVudCIsInF1ZXJ5U2VsZWN0b3IiLCJUdWsiLCJNdXNodSIsIlBhc2NhbCIsIlNlYmFzdGlhbiIsInJlc3VsdHMiLCJvbmNsaWNrIiwicXVlc3Rpb24xIiwidmFsdWUiLCJxdWVzdGlvbjIiLCJjb25zb2xlIiwibG9nIiwic3R5bGUiLCJkaXNwbGF5IiwiaW5uZXJIVE1MIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUNBLElBQUlBLE9BQU8sR0FBR0MsUUFBUSxDQUFDQyxhQUFULENBQXVCLFVBQXZCLENBQWQ7QUFFQSxJQUFJQyxHQUFHLEdBQUdGLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixNQUF2QixDQUFWO0FBQ0EsSUFBSUUsS0FBSyxHQUFHSCxRQUFRLENBQUNDLGFBQVQsQ0FBdUIsUUFBdkIsQ0FBWjtBQUNBLElBQUlHLE1BQU0sR0FBR0osUUFBUSxDQUFDQyxhQUFULENBQXVCLFNBQXZCLENBQWI7QUFDQSxJQUFJSSxTQUFTLEdBQUdMLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixZQUF2QixDQUFoQjtBQUNBLElBQUlLLE9BQU8sR0FBR04sUUFBUSxDQUFDQyxhQUFULENBQXVCLFNBQXZCLENBQWQsQyxDQUVBO0FBQ0E7QUFDQTtBQUNBOztBQUVBRixPQUFPLENBQUNRLE9BQVIsR0FBa0IsWUFBVztBQUN6QixNQUFJQyxTQUFTLEdBQUdSLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixZQUF2QixFQUFxQ1EsS0FBckQ7QUFDQSxNQUFJQyxTQUFTLEdBQUdWLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixZQUF2QixFQUFxQ1EsS0FBckQ7QUFDQUUsRUFBQUEsT0FBTyxDQUFDQyxHQUFSLENBQVlGLFNBQVosRUFIeUIsQ0FJekI7O0FBRUEsTUFBSUYsU0FBUyxLQUFLLGNBQWQsSUFBZ0NFLFNBQVMsS0FBSyxpQkFBbEQsRUFBcUU7QUFDakVKLElBQUFBLE9BQU8sQ0FBQ08sS0FBUixDQUFjQyxPQUFkLEdBQXdCLE9BQXhCO0FBQ0FaLElBQUFBLEdBQUcsQ0FBQ1csS0FBSixDQUFVQyxPQUFWLEdBQWtCLE9BQWxCO0FBQ0FSLElBQUFBLE9BQU8sQ0FBQ1MsU0FBUixHQUFvQixLQUFwQjtBQUNBVCxJQUFBQSxPQUFPLENBQUNTLFNBQVIsR0FBb0IsNEJBQTZCLEdBQTdCLEdBQW1DLFNBQXZEO0FBQ0gsR0FMRCxNQUtPLElBQUlQLFNBQVMsS0FBSyxjQUFkLElBQWdDRSxTQUFTLEtBQUssVUFBbEQsRUFBOEQ7QUFFaEVKLElBQUFBLE9BQU8sQ0FBQ08sS0FBUixDQUFjQyxPQUFkLEdBQXdCLE9BQXhCO0FBQ0RULElBQUFBLFNBQVMsQ0FBQ1EsS0FBVixDQUFnQkMsT0FBaEIsR0FBd0IsT0FBeEI7QUFDQVIsSUFBQUEsT0FBTyxDQUFDUyxTQUFSLEdBQW9CLFdBQXBCO0FBQ0FULElBQUFBLE9BQU8sQ0FBQ1MsU0FBUixHQUFvQiw0QkFBNkIsR0FBN0IsR0FBbUMsV0FBdkQ7QUFDSCxHQU5NLE1BTUEsSUFBSVAsU0FBUyxLQUFLLG1CQUFkLElBQXFDRSxTQUFTLEtBQUssaUJBQXZELEVBQTBFO0FBRTVFSixJQUFBQSxPQUFPLENBQUNPLEtBQVIsQ0FBY0MsT0FBZCxHQUF3QixPQUF4QjtBQUNEWCxJQUFBQSxLQUFLLENBQUNVLEtBQU4sQ0FBWUMsT0FBWixHQUFvQixPQUFwQjtBQUNBUixJQUFBQSxPQUFPLENBQUNTLFNBQVIsR0FBb0IsT0FBcEI7QUFDQVQsSUFBQUEsT0FBTyxDQUFDUyxTQUFSLEdBQW9CLDRCQUE2QixHQUE3QixHQUFtQyxPQUF2RDtBQUNILEdBTk0sTUFNQSxJQUFJUCxTQUFTLEtBQUssbUJBQWQsSUFBcUNFLFNBQVMsS0FBSyxVQUF2RCxFQUFtRTtBQUVyRUosSUFBQUEsT0FBTyxDQUFDTyxLQUFSLENBQWNDLE9BQWQsR0FBd0IsT0FBeEI7QUFDRFYsSUFBQUEsTUFBTSxDQUFDUyxLQUFQLENBQWFDLE9BQWIsR0FBcUIsT0FBckI7QUFDQVIsSUFBQUEsT0FBTyxDQUFDUyxTQUFSLEdBQW9CLFFBQXBCO0FBQ0FULElBQUFBLE9BQU8sQ0FBQ1MsU0FBUixHQUFvQiw0QkFBNkIsR0FBN0IsR0FBbUMsUUFBdkQ7QUFDSDtBQUNKLENBOUJEIiwic291cmNlc0NvbnRlbnQiOlsiLy9sZXQgYnV0dG9uMT0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5idXR0b24xXCIpO1xubGV0IGJ1dHRvbjIgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLmJ1dHRvbjJcIik7XG5cbmxldCBUdWsgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLlR1a1wiKTtcbmxldCBNdXNodSA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIuTXVzaHVcIik7XG5sZXQgUGFzY2FsID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5QYXNjYWxcIik7XG5sZXQgU2ViYXN0aWFuID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5TZWJhc3RpYW5cIik7XG5sZXQgcmVzdWx0cyA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIucmVzdWx0XCIpO1xuXG4vLyBidXR0b24xLm9uY2xpY2sgPSBmdW5jdGlvbigpIHtcbi8vIFxuLy8gY29uc29sZS5sb2cocXVlc3Rpb24xKTtcbi8vIHF1ZXN0aW9uMS5pbm5lckhUTUwgPSAoYnV0dG9uMSk7IH07XG5cbmJ1dHRvbjIub25jbGljayA9IGZ1bmN0aW9uKCkge1xuICAgIGxldCBxdWVzdGlvbjEgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLnF1ZXN0aW9uMVwiKS52YWx1ZTtcbiAgICBsZXQgcXVlc3Rpb24yID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5xdWVzdGlvbjJcIikudmFsdWU7XG4gICAgY29uc29sZS5sb2cocXVlc3Rpb24yKTtcbiAgICAvLyBxdWVzdGlvbjIuaW5uZXJIVE1MID0gKGJ1dHRvbjIpOyBcblxuICAgIGlmIChxdWVzdGlvbjEgPT09IFwiTWFueSBGcmllbmRzXCIgJiYgcXVlc3Rpb24yID09PSBcIkNhcHRhaW4gQW1lcmljYVwiKSB7XG4gICAgICAgIHJlc3VsdHMuc3R5bGUuZGlzcGxheSA9IFwiYmxvY2tcIjtcbiAgICAgICAgVHVrLnN0eWxlLmRpc3BsYXk9XCJibG9ja1wiO1xuICAgICAgICByZXN1bHRzLmlubmVySFRNTCA9IFwiVHVrXCI7XG4gICAgICAgIHJlc3VsdHMuaW5uZXJIVE1MID0gXCJZb3VyIERpc25leSBTaWRla2ljayBpc1wiICArIFwiIFwiICsgXCJUdWsgVHVrXCIgIDtcbiAgICB9IGVsc2UgaWYgKHF1ZXN0aW9uMSA9PT0gXCJNYW55IEZyaWVuZHNcIiAmJiBxdWVzdGlvbjIgPT09IFwiSXJvbiBNYW5cIikge1xuICAgIFxuICAgICAgICAgcmVzdWx0cy5zdHlsZS5kaXNwbGF5ID0gXCJibG9ja1wiO1xuICAgICAgICBTZWJhc3RpYW4uc3R5bGUuZGlzcGxheT1cImJsb2NrXCI7XG4gICAgICAgIHJlc3VsdHMuaW5uZXJIVE1MID0gXCJTZWJhc3RpYW5cIjtcbiAgICAgICAgcmVzdWx0cy5pbm5lckhUTUwgPSBcIllvdXIgRGlzbmV5IFNpZGVraWNrIGlzXCIgICsgXCIgXCIgKyBcIlNlYmFzdGlhblwiIDtcbiAgICB9IGVsc2UgaWYgKHF1ZXN0aW9uMSA9PT0gXCJGZXcgQ2xvc2UgRnJpZW5kc1wiICYmIHF1ZXN0aW9uMiA9PT0gXCJDYXB0YWluIEFtZXJpY2FcIikge1xuICAgICAgIFxuICAgICAgICAgcmVzdWx0cy5zdHlsZS5kaXNwbGF5ID0gXCJibG9ja1wiO1xuICAgICAgICBNdXNodS5zdHlsZS5kaXNwbGF5PVwiYmxvY2tcIjtcbiAgICAgICAgcmVzdWx0cy5pbm5lckhUTUwgPSBcIk11c2h1XCI7XG4gICAgICAgIHJlc3VsdHMuaW5uZXJIVE1MID0gXCJZb3VyIERpc25leSBTaWRla2ljayBpc1wiICArIFwiIFwiICsgXCJNdXNodVwiICA7XG4gICAgfSBlbHNlIGlmIChxdWVzdGlvbjEgPT09IFwiRmV3IENsb3NlIEZyaWVuZHNcIiAmJiBxdWVzdGlvbjIgPT09IFwiSXJvbiBNYW5cIikge1xuICAgICAgIFxuICAgICAgICAgcmVzdWx0cy5zdHlsZS5kaXNwbGF5ID0gXCJibG9ja1wiO1xuICAgICAgICBQYXNjYWwuc3R5bGUuZGlzcGxheT1cImJsb2NrXCI7XG4gICAgICAgIHJlc3VsdHMuaW5uZXJIVE1MID0gXCJQYXNjYWxcIjtcbiAgICAgICAgcmVzdWx0cy5pbm5lckhUTUwgPSBcIllvdXIgRGlzbmV5IFNpZGVraWNrIGlzXCIgICsgXCIgXCIgKyBcIlBhc2NhbFwiICA7XG4gICAgfVxufTsiXX0=</script></body></html>
